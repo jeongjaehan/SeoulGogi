@@ -1,14 +1,10 @@
 package com.ingcredible.seoulgogi;
 
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.support.v4.app.NavUtils;
 
 //  MainActivity
 //   - 스플래시 이후에 불러지는 어플 메인 화면 - 비스타 제작
@@ -34,10 +30,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		switch (id) {
 		case R.id.menu_1:
 			// 메뉴1 클릭 (박기한 담당)
+			Intent i = new Intent(MainActivity.this, InfoActivity.class);
+			startActivity(i);
 			break; 
 			
 		case R.id.menu_2:
 			// 메뉴2 클릭 (박기한 담당)
+			Intent i2 = new Intent(MainActivity.this, MenuActivity.class);
+			startActivity(i2);
 			break;
 
 		case R.id.menu_3:
@@ -46,6 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			
 		case R.id.menu_4:
 			// 메뉴4 클릭 (박기한 담당)
+			// 는 지금 구현 필요없다고 수철형이 그러신다. 예약 OUT!
 			break;
 		
 		case R.id.menu_5:
