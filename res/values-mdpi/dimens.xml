@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="bg_padding">120dp</dimen>
+    <dimen name="margin">28dp</dimen>
+</resources>

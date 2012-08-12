@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/seoulgogi_bg" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            
+            <!-- Invisible area xD -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bg_padding"
+                android:background="#00000000"
+                android:visibility="visible" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/shadow" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/tile_bg" android:orientation="vertical">
+                <!-- 서울고깃집 타이틀 -->
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" android:src="@drawable/title" />
+                
+                
+                <!-- 리스트 박스(바깥쪽 도형) -->
+                <LinearLayout android:background="@drawable/listview_outer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:layout_marginRight="@dimen/margin" android:orientation="vertical">
+                    <!-- 안쪽 도형 -->
+	                <LinearLayout android:background="@drawable/listview_inner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1px" android:orientation="vertical">
+            			<!-- 서울고깃집 소개 -->
+            			<RelativeLayout android:id="@+id/menu_1" android:layout_width="fill_parent" android:layout_height="56dp" android:background="@drawable/ics" android:clickable="true" android:focusable="true">
+            			    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:orientation="vertical">
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu1" android:textSize="14dp" android:textColor="#252525" android:textStyle="bold" />
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu1_1" android:textSize="10dp" android:textColor="#505050"  />
+            			    </LinearLayout>
+            			</RelativeLayout>
+            			<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#9c9c9c" />
+							
+            			<RelativeLayout android:id="@+id/menu_2" android:layout_width="fill_parent" android:layout_height="56dp" android:background="@drawable/ics" android:clickable="true" android:focusable="true">
+            			    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:orientation="vertical">
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu2" android:textSize="14dp" android:textColor="#252525" android:textStyle="bold" />
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu2_1" android:textSize="10dp" android:textColor="#505050"  />
+            			    </LinearLayout>
+            			</RelativeLayout>
+            			<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#9c9c9c" />
+
+            			<RelativeLayout android:id="@+id/menu_3" android:layout_width="fill_parent" android:layout_height="56dp" android:background="@drawable/ics" android:clickable="true" android:focusable="true">
+            			    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:orientation="vertical">
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu3" android:textSize="14dp" android:textColor="#252525" android:textStyle="bold" />
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu3_1" android:textSize="10dp" android:textColor="#505050"  />
+            			    </LinearLayout>            			    
+            			</RelativeLayout>
+            			<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#9c9c9c" />            		
+            			
+            			<RelativeLayout android:id="@+id/menu_4" android:layout_width="fill_parent" android:layout_height="56dp" android:background="@drawable/ics" android:clickable="true" android:focusable="true">
+            			    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:orientation="vertical">
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu4" android:textSize="14dp" android:textColor="#252525" android:textStyle="bold" />
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu4_1" android:textSize="10dp" android:textColor="#505050"  />
+            			    </LinearLayout>            			    
+            			</RelativeLayout>
+            			<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#9c9c9c" />
+            			
+            			<RelativeLayout android:id="@+id/menu_5" android:layout_width="fill_parent" android:layout_height="56dp" android:background="@drawable/ics" android:clickable="true" android:focusable="true">
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:orientation="vertical">
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu5" android:textSize="14dp" android:textColor="#252525" android:textStyle="bold" />
+            			        <TextView android:layout_width="fill_parent" android:layout_marginLeft="16dp" android:layout_height="wrap_content" android:text="@string/menu5_1" android:textSize="10dp" android:textColor="#505050"  />
+            			    </LinearLayout>
+            			</RelativeLayout>
+            		</LinearLayout>
+                </LinearLayout>
+
+                <!-- 페이스북 버튼 -->
+                <Button
+                    android:id="@+id/goto_facebook"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/facebook_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울고깃집 페이스북 페이지 열기" 
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:shadowColor="#29487d"
+                    android:shadowDx="0"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.0" />
+                
+                <!-- 잉크 로고 -->
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/about" android:layout_marginTop="30dp" android:scaleType="centerInside" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
